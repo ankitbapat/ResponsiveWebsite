@@ -1,0 +1,1833 @@
+@font-face {
+  font-family: DINMedium;
+  src: url(../fonts/DINLiA_.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: DINMedium;
+}
+
+%ClearFixInheritance{content: "";display: table;clear: both;}
+
+.testimonialsrow1::after, .testimonialsrow2::after, .mainGiveAway::after, .highlights .highlightsrow2::after,
+ .highlights .highlightsrow1::after, .whyPriva .whyPrivarow1::after, .whyPriva .whyPrivarow3::after, 
+ .whyPriva .whyPrivarow2::after, .whyPriva .whyPrivarow4::after, .redeemPointrow2::after,.redeemPointrow1::after, 
+ .row5::after, .row4::after, .row3::after, .row2::after, .row1::after {
+    @extend %ClearFixInheritance;
+}
+
+
+
+
+.nav{padding-top: 20px;
+
+  padding-bottom: 48px;
+
+  padding-left: 20px; width:100%;border-bottom: 1px solid #bd9234;position:relative;}
+ .navMenu
+ { 
+   float: left;
+  } 
+ .navTitle
+ {
+
+   position: absolute;
+  left: 50%;
+ 
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navTitle img {
+  float: left;
+  width: 100%;
+}
+.dropdown{
+  padding-left:15px;
+  background: url('../images/arrowdropdown.png') right 9px no-repeat;
+  padding-right: 16px;
+}
+
+.navSearch  ul {list-style-type: none;margin:0; padding:0}
+.navSearch ul li {float:right;}
+.navSearch ul li:not(:last-child){padding-left:15px;}
+ .navSearch {float:right}
+ 
+
+.Privaback{width:100%; height: 700px;}
+.Privaorange{width:100%; height: 700px; background: linear-gradient(90deg, rgba(189,146,52,1) 30%, rgba(255,255,255,1) 30%);}
+.imgBanner{position:relative; width:75%; height:500px;background-image: url('../images/priva/banner/banner.jpg');background-size: cover;left: 100px;top: 100px;}
+.PrivaImgBanner{position:relative;    margin-left: 25px;background-image: url('../images/priva/privalogo.png');background-repeat: no-repeat ;background-size: contain; height:100px;width: 160px;top: 20px}
+.PrivaText{position:relative;font-size:35px;    margin-left: 25px;}
+.PrivaInfo{position:relative;padding-top: 300px;font-size:16px;left: 31%;word-wrap: break-word;width: 80%;}
+
+
+
+
+
+.row1 {
+  margin-top: 30px;
+  padding: 20px 5%;
+  display: block;
+  width: 100%;
+}
+
+.earnpointlogo {
+  float: left;
+  display: block;
+  width: 20%;
+  height: 110px;
+}
+.clearfixEarnPointsImg{border: 2px solid #bd9234; padding:10px;    margin-bottom: 20px;    width: 60px;}
+
+.earnpointlogo {
+    .fontearn {
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  margin-top: 20px;}
+}
+
+.earnpointlogo {.fontpoints {
+  font-size: 22px;
+  color: #bd9234;}
+}
+
+.earnpointDesc {
+  float: left;
+  display: block;
+  width: 80%;
+  height: 110px;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.earnpointDesc {.earnpointSpanDesc {
+  font-size: 20px;}
+}
+
+.row2 {
+  /* background-color: black; */
+  // padding: 20px;
+  margin-bottom: 50px;
+  display: block;
+  width: 100%;
+  
+}
+
+.EarnPointsMobile {
+  display: none;
+}
+
+.EarnPointsDesktop {
+  display: block;
+}
+
+.giftDeskGold {
+  width: 33%;
+  display: block;
+  float: left;
+  min-height: 300px;
+  padding: 0px 2%;
+}
+
+.giftDeskSilver {
+  width: 33%;
+  display: block;
+  float: left;
+  min-height: 300px;
+  padding: 0px 2%;
+}
+
+.giftDeskPlatinum {
+  width: 33%;
+  display: block;
+  float: left;
+  min-height: 300px;
+  padding: 0px 2%;
+}
+
+.upperhalfOfEarnPointsMobile {
+  padding: 0px 10%;
+  width: 100%;
+  height: 25%;
+}
+
+.lowerhalfOfEarnPointsMobile {
+  padding: 23% 0px;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+}
+
+.lowerhalfOfEarnPointsMobileText1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.lowerhalfOfEarnPointsMobileText1:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 20%;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 1px solid black;
+  /* This creates the border. Replace black with whatever color you want. */
+  font-weight: bold;
+}
+
+.lowerhalfOfEarnPointsMobileText2 {
+  font-size: 25px;
+}
+
+.lowerhalfOfEarnPointsMobileText2:before {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 20%;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+}
+
+.upperhalfOfEarnPointsDesktop {
+  padding: 0px 15%;
+  width: 100%;
+  height: 25%;
+}
+
+.lowerhalfOfEarnPointsDesktop {
+  padding: 20% 20%;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+}
+
+.lowerhalfOfEarnPointsDesktopText1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.lowerhalfOfEarnPointsDesktopText1:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 20%;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 1px solid black;
+  /* This creates the border. Replace black with whatever color you want. */
+  font-weight: bold;
+}
+
+.lowerhalfOfEarnPointsDesktopText2 {
+  font-size: 30px;
+}
+
+.lowerhalfOfEarnPointsDesktopText2:before {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 20%;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+}
+
+
+
+
+
+.row3 {
+  padding-bottom: 10px;
+  font-size: 20px;
+  // padding: 40px;
+  display: block;
+  width: 100%;
+}
+
+.row4 {
+  font-size: 20px;
+  // padding: 40px;
+  display: block;
+  width: 100%;
+}
+
+.DiscountTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.DiscountTable {td {
+  padding: 8px;
+  text-align: center;}
+}
+
+.DiscountTable tr:not(:last-child) {
+  border-bottom: 1px solid #bd9234;
+}
+
+.DiscountTable {th {
+  text-align: center;
+  padding:10px;
+  background-color: #f2ecd2;
+  color:#bd9234;}
+
+}
+
+.availCaption {
+  margin: 30px 0 10px;
+  font-weight: bold;
+  // padding: 20px;
+  text-align: center;
+}
+
+.row5 {
+  font-size: 20px;
+  // padding: 40px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  /*here bottom margin is set*/
+}
+
+/*-----------------------------redeemPoint----------------------------------------*/
+.redeemPoint {.redeemPointrow1 {
+  margin-top:40px 0px;
+  padding: 20px 5%;
+  display: block;
+  width: 100%;}
+}
+
+.RedeemPointlogo {
+  float: left;
+  display: block;
+  width: 20%;
+  height: 110px;
+}
+.clearfixImgRedeem{border:2px solid #bd9234; padding:10px;width:60px;margin-bottom: 20px}
+.RedeemPointlogo {.fontRedeem {
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;}
+}
+
+.RedeemPointlogo {.fontRedeempoints {
+  font-size: 22px;
+  color: #bd9234;}
+}
+
+.RedeemPointdesc {
+  float: left;
+  display: block;
+  width: 80%;
+  height: 110px;
+  padding-top:5%;
+  padding-left:15%;
+}
+
+.RedeemPointdesc {.RedeemPointSpanDesc {
+  font-size: 20px;}
+}
+
+
+.redeemPoint {.redeemPointrow2 {
+  /* background-color: black; */
+  // padding: 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  /*here bottom margin is set*/}
+}
+
+.RedeemPointsMobile {
+  display: none;
+}
+
+/* .prev,.next{display:none;} */
+.RedeemPointsDesktop {
+  display: block;
+}
+
+.buyDesktop {
+  width: 33%;
+  display: block;
+  
+  float: left;
+  height: 300px;
+}
+
+.coverDesktop {
+  width: 33%;
+  display: block;
+
+  float: left;
+  height: 300px;
+}
+
+.liquidateDesktop {
+  width: 33%;
+  display: block;
+
+  float: left;
+  height: 300px;
+}
+
+
+.upperhalfOfRedeemPointsMobile {
+  padding: 0px 10%;
+  width: 100%;
+  height: 50%;
+}
+
+.lowerhalfOfRedeemPointsMobile {
+  padding: 0% 0px;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+.upperhalfOfRedeemPointsDesktop {
+  padding: 0px 15%;
+  width: 100%;
+  height: 50%;
+}
+
+.lowerhalfOfRedeemPointsDesktop {
+  padding: 5% 10%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+.lowerhalfOfRedeemPointsDesktopText1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.lowerhalfOfRedeemPointsDesktopText2 {
+  font-size: 30px;
+  color: #bd9234;
+}
+
+.lowerhalfOfRedeemPointsDesktopText3 {
+  font-size: 20px;
+}
+
+.lowerhalfOfRedeemPointsMobileText1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.lowerhalfOfRedeemPointsMobileText2 {
+  font-size: 30px;
+  color: #bd9234;
+}
+
+.lowerhalfOfRedeemPointsMobileText3 {
+  font-size: 20px;
+}
+
+/*------------------------------whyPriva---------------------------------------*/
+.whyPriva{ .whyPrivarow1 {
+  margin-top: 120px;
+  padding: 5%;
+  display: block;
+  width: 100%;}
+}
+
+.whyPrivalogo {
+  float: left;
+  display: block;
+  width: 20%;
+  height: 110px;
+}
+.clearfixPrivaLogo{border:2px solid #bd9234; padding:10px;margin-bottom:20px;}
+.whyPrivalogo {.fontWhy {
+  color: white;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;}
+}
+
+.whyPrivalogo {.fontPriva {
+  font-size: 22px;
+  color: #bd9234;}
+}
+
+.whyPrivadesc {
+  float: left;
+  display: block;
+  width: 80%;
+  color: white;
+  height: 110px;
+  padding-left: 10%;
+  padding-top: 6%;
+}
+
+.whyPrivadesc {.whyPrivaSpanDesc {
+  font-size: 20px;}
+}
+
+
+/*--BestPrice--*/
+.whyPriva {.whyPrivarow2 {
+  /* background-color: black; */
+  padding: 20px;
+  display: block;
+  width: 100%;}
+}
+
+.whyPriva {.whyPrivarow2 {.BestPrice {
+  float: left;
+  /* padding: 60px; */
+  display: block;
+  width: 50%;}}
+}
+
+.whyPriva {.whyPrivarow2 {.whyPrivarow2Blank {
+  color: black;
+  float: left;
+  display: block;
+  /* padding: 60px; */
+  background-color: black;
+  width: 50%;}}
+}
+
+.BestPriceNumber {
+  float: left;
+  height: 200px;
+  width: 10%;
+  color: grey;
+  font-size: 18px;
+  padding-top: 6%;
+  padding-right: 2%;
+}
+
+.BestPriceContainer {
+  float: left;
+  height: 200px;
+  width: 90%;
+}
+
+.BestPriceContent {
+  height: 50%;
+  width: 100%;
+}
+
+.BestPriceTitle {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 28px;
+  padding-top: 5%;
+}
+
+
+.BestPriceText {
+  height: 50%;
+  width: 70%;
+  color: white;
+}
+
+.BestPriceImg img {
+  max-width: 100%;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 5%;
+}
+
+
+/*--AssuredDiscount--*/
+.whyPriva {.whyPrivarow3 {
+  /* background-color: black; */
+  padding: 20px;
+  display: block;
+  width: 100%;}
+}
+
+.whyPriva {.whyPrivarow3 {.AssuredDiscount {
+  float: left;
+  /* padding: 60px; */
+  display: block;
+  width: 50%;}}
+}
+
+.whyPriva{ .whyPrivarow3 {.whyPrivarow3Blank {
+  color: black;
+  float: left;
+  display: block;
+  /* padding: 60px; */
+  background-color: black;
+  width: 50%;
+  /*note:- here blank is more*/}}
+}
+
+.AssuredDiscountNumber {
+  float: left;
+  height: 200px;
+  width: 10%;
+  color: grey;
+  font-size: 18px;
+  padding-top: 6%;
+  padding-right: 2%;
+}
+
+.AssuredDiscountContainer {
+  float: left;
+  height: 200px;
+  width: 90%;
+}
+
+.AssuredDiscountContent {
+  height: 50%;
+  width: 100%;
+}
+
+.AssuredDiscountTitle {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 28px;
+  padding-top: 5%;
+}
+
+.AssuredDiscountImg img {
+  max-width: 100%;
+  height: 70px;
+  margin-left: 60px;
+  margin-top: 5%;
+}
+
+.AssuredDiscountText {
+  height: 50%;
+  width: 70%;
+  color: white;
+}
+
+
+/*--ServiceGuarantee--*/
+.whyPriva {.whyPrivarow4 {
+  /* background-color: black; */
+  padding: 20px;
+  display: block;
+  width: 100%;
+  padding: 50px 10px;
+  }
+}
+
+.whyPriva {.whyPrivarow4 {.ServiceGuarantee {
+  float: left;
+  /* padding: 60px; */
+  display: block;
+  width: 50%;}}
+}
+
+.whyPriva {.whyPrivarow4 {.whyPrivarow4Blank {
+  color: black;
+  float: left;
+  display: block;
+  /* padding: 60px; */
+  background-color: black;
+  width: 50%;}}
+}
+
+.ServiceGuaranteeNumber {
+  float: left;
+  height: 200px;
+  width: 10%;
+  color: grey;
+  font-size: 18px;
+  padding-top: 6%;
+  padding-right: 2%;
+}
+
+.ServiceGuaranteeContainer {
+  float: left;
+  height: 200px;
+  width: 90%;
+}
+
+.ServiceGuaranteeContent {
+  height: 50%;
+  width: 100%;
+}
+
+.ServiceGuaranteeTitle {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 28px;
+  padding-top: 5%;
+}
+
+.ServiceGuaranteeImg img {
+  max-width: 100%;
+  height: 70px;
+  margin-left: 70px;
+  margin-top: 5%;
+}
+
+.ServiceGuaranteeText {
+  height: 50%;
+  width: 70%;
+  color: white;
+}
+
+
+/*------------------------------Highlights---------------------------------------*/
+.highlights {.highlightsrow1 {
+  padding: 25px 5%;
+  display: block;
+  width: 100%;}
+}
+
+.highlights {.highlightslogo {
+  float: left;
+  display: block;
+  width: 100%;
+  height: 110px;
+  margin-top: 60px;}
+}
+.clearfixImgHighlights{border:2px solid #bd9234; padding: 10px;margin-bottom:20px;}
+.highlights {.fontHigh {
+  color: black;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;}
+}
+.highlights {.fontLights{
+  color: black;
+  font-size: 22px;
+}}
+
+.highlights {.highlightsrow2 {
+  /* background-color: black; */
+  padding: 20px 5% 10px;
+  display: block;
+  margin-bottom: 100px;
+  /*here bottom margin is set*/
+  width: 100%;}
+}
+
+.highlights {.MemEnrolled1 {
+  float: left;
+  width: 33%;
+  padding-top: 15px;
+  padding-left: 80px;
+  display: block;
+  /* background-color: orange; */
+  text-align: center;
+  }
+}
+
+.MemEnrolled1 {.MemEnrolled1Content {
+  float: left;
+  width: 80%;
+  text-align: left;
+  padding-left: 2%;}
+}
+
+.MemEnrolled1 {.MemEnrolled1Number {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: left;
+  color: #bc9136;}
+}
+
+.MemEnrolled1 {.MemEnrolled1Text {
+  font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    position: relative;}
+}
+
+
+.MemEnrolled1{
+  .MemEnrolled1Text::before{
+        content: "";
+    width: 50px;
+    height: 1px;
+    background: #bd9234;
+    display: inline-block;
+    position: absolute;
+    left: -53px;
+    top: 13px;
+  }
+}
+
+.highlights {.MemEnrolled2 {
+  float: left;
+  width: 33%;
+  padding-top: 15px;
+  padding-left: 80px;
+  display: block;
+  /* background-color: grey; */
+  text-align: center;
+ }
+}
+
+.MemEnrolled2 {.MemEnrolled2Content {
+  float: left;
+  width: 80%;
+  text-align: left;
+  padding-left: 2%;}
+}
+
+.MemEnrolled2 {.MemEnrolled2Number {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: left;
+  color: #bc9136;}
+}
+
+.MemEnrolled2 {.MemEnrolled2Text {
+  font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    position: relative;}
+}
+.MemEnrolled2{
+  .MemEnrolled2Text::before{
+        content: "";
+    width: 50px;
+    height: 1px;
+    background: #bd9234;
+    display: inline-block;
+    position: absolute;
+    left: -53px;
+    top: 13px;
+  }
+}
+
+
+
+.highlights {.MemEnrolled3 {
+  float: left;
+  width: 33%;
+  padding-top: 15px;
+  padding-left: 80px;
+  display: block;
+  /* background-color: orange; */
+  text-align: center;
+ }
+}
+
+.MemEnrolled3 {.MemEnrolled3Content {
+  float: left;
+  width: 80%;
+  text-align: left;
+  padding-left: 2%;}
+}
+
+.MemEnrolled3 {.MemEnrolled3Number {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: left;
+  color: #bc9136;}
+}
+
+.MemEnrolled3 {.MemEnrolled3Text {
+  font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    position: relative;}
+}
+.MemEnrolled3{
+  .MemEnrolled3Text::before{
+        content: "";
+    width: 50px;
+    height: 1px;
+    background: #bd9234;
+    display: inline-block;
+    position: absolute;
+    left: -53px;
+    top: 13px;
+  }
+}
+
+
+/*------------------------------GiveAways---------------------------------------*/
+.mainGiveAway {
+  position: relative;
+  /* background-color: black; */
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  /*here bottom margin is set*/
+}
+
+.mainGiveAway {.giveAways {
+  background-color: #bc9136;
+  padding: 80px 0px;
+  display: block;
+  width: 40%;
+  text-align: center;}
+}
+
+/* .giveAwayslogo {margin:0px auto; border: 2px solid black;} */
+/* .giveAwaysTitle{margin:0px auto; border: 2px solid black} */
+.clearfixImgGiveAway {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.content {
+  display: block;
+  margin: 0px 25px;
+}
+
+.fontOur {
+  color: black;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  float: left;
+  margin-right: 2%;
+}
+
+.fontGiveaway {
+  font-size: 22px;
+  color: white;
+  float: left;
+}
+
+.mainGiveAway {.AppleWatchImg {
+  overflow: auto;
+  position: relative;
+  margin-bottom: 10px;
+  width: 70%;
+  left: 23%;
+  top: -35px;
+  /* background-color: blue;  */
+  text-align: center;}
+}
+
+/*watch corousal*/
+.WatchMobile {
+  display: none;
+}
+
+.WatchDesktop {
+  display: block;
+}
+
+.AppleWatchImg1Desktop {
+  width: 100%;
+  display: block;
+  height: 300px;
+}
+.WatchDesktop {p{font-size:20px;text-align:center;font-weight:bold;}}
+.AppleWatchImg2Desktop {
+  width: 100%;
+  display: block;
+  height: 300px;
+}
+// .AppleWatchImg2Desktop {p{font-size:20px;text-align:center;font-weight:bold;}}
+
+/*watch corousal*/
+/*cursor*/
+.nextWatchCarouselarrows {
+  cursor: pointer;
+  position: absolute;
+  left: 87%;
+  top: 25%;
+  width: auto;
+  padding: 16px;
+  color: #bc9136;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /* background-color:red;  */
+}
+
+.prevWatchCarouselarrows {
+  cursor: pointer;
+  position: absolute;
+  left: 87%;
+  top: 25%;
+  width: auto;
+  padding: 16px;
+  color: #bc9136;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /* background-color:red; */
+  left: 80%;
+}
+
+
+
+/*------------------------------Testimonials---------------------------------------*/
+.testimonials {.testimonialsrow1 {
+  /* background-color: grey; */
+  padding: 25px 5%;
+  display: block;
+  width: 100%;}
+}
+
+.clearFixImgTestimonials {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #bc9136;
+  width: 6%;
+}
+
+.fontTestimonial {
+  color: white;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.fontTest {
+  border-bottom: 2PX solid BLACK;
+  padding-bottom: 2%;
+  font-size: 22px;
+}
+
+.fontImonials {
+  font-size: 22px;
+}
+
+
+.testimonials {.testimonialsrow2 {
+  /* background-color: black; */
+  padding: 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  /*here bottom margin is set*/}
+}
+
+.testimonialprev, {.testimonialnext {
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /* background-color:red; */}
+}
+
+.testimonialnext {
+  right: 0;
+}
+
+
+.TestMobile {
+  display: block;
+  position: relative;
+}
+
+.upperhalfOfTestMobile {
+  padding: 0px 10%;
+  width: 100%;
+  height: 50%;
+}
+
+.lowerhalfOfTestMobile {
+  padding: 0% 0px;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+
+.lowerhalfOfTestMobileText1 {
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.lowerhalfOfTestMobileText2 {
+  font-size: 30px;
+  color: #bd9234;
+}
+ .owl-item .lowerhalfOfTestMobile{display:none;}
+ .owl-item.active .lowerhalfOfTestMobile{display:block;}
+//  .owl-item{transform: scale(0.5);}
+//  .owl-item  {position: relative;top: -130px;}
+// @media only screen and (max-width:320px){.owl-item.active.center {    transform: scale(1);}}
+// .owl-stage{max-width: 3358px;}
+  .active {.item {
+    opacity: 1;
+    transform: scale(1);}
+  }
+
+  .item {
+    opacity: 0.4;
+    transition: 0.4s ease all;
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+
+
+  
+//  @media only screen and (max-width:600px){
+  
+//     .RedeemPointsowlPrev 
+//     { 
+//     position: absolute;   left: 0;bottom: -10px;;display: inline-block;
+//     background-color: #bc9136;
+//     margin-left: 0px;
+//     font-size: 0;
+//     width: 25px;
+//     height: 25px;
+     
+//   }
+//     .RedeemPointsowlNext
+//     { 
+//       position: absolute;   right: 0;bottom:  -10px;; display: inline-block;
+//       background-color: #bc9136;
+//       margin-left: 15px;
+//       font-size: 0;
+//       width: 25px;
+//       height: 25px;
+      
+//     }
+//  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Login {
+  text-align: center;
+}
+
+.Logintext {
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: #bd9234;
+  border: none;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.LogintextQueries {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.call, .email {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.LogintextQueries:before {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 80%;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-top: 1px solid grey;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+
+/*Footer*/
+.footer {
+  padding-top: 10px;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 55px;
+  padding-left: 10px;
+  margin-top: 20px;
+  color: grey;
+}
+
+.footer .firstline {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.firstlineFirstElement, .firstlineSecondElement, .firstlineThirdElement, .firstlineFourthElement {
+  float: left;
+  padding: 1%;
+}
+
+.Secondline {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.SecondlineFirstElement, .SecondlineSecondElement, .SecondlineThirdElement, .SecondlineFourthElement, .SecondlineFifthElement, .SecondlineSixthElement {
+  float: right;
+  padding: 2px;
+}
+
+.lodhaCopy {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 320px){ .FirstLinecleafix{position: relative;top:20px;left:2%;font-size:15px;}} */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+ {
+  .footer {
+    padding-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .firstlineFirstElement {
+    width: 100%;
+  }
+
+  .firstlineSecondElement, .firstlineThirdElement, .firstlineFourthElement {
+    float: left;
+    font-size: 10px;
+  }
+
+  .FirstLinecleafix {
+    clear: both;
+    content: "";
+    display: table;
+    position: relative;
+    font-size: 13px;
+    padding: 20px 53px;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .Secondline {
+    width: 100%;
+  }
+
+  .SecondlineSecondElement, .SecondlineThirdElement, .SecondlineFourthElement, .SecondlineFifthElement, .SecondlineSixthElement {
+    float: left;
+  }
+
+  .SecondLinecleafix {
+    clear: both;
+    content: "";
+    display: table;
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    top: -40px;
+    padding: 0px 70px;
+  }
+
+  .SecondlineFirstElement {
+    position: relative;
+    width: 100%;
+    top: 60px;
+  }
+
+  .firstlineFirstElement:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 50%;
+    /* Change this to whatever width you want. */
+    padding-top: 20px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid grey;
+    /* This creates the border. Replace black with whatever color you want. */
+  }
+
+  .SecondLinecleafix:before {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 80%;
+    /* Change this to whatever width you want. */
+    padding-top: 20px;
+    /* This creates some space between the element and the border. */
+    border-top: 1px solid grey;
+    /* This creates the border. Replace black with whatever color you want. */
+  }
+
+  .ftImage {
+    width: 22px;
+  }
+
+  .lodhaCopy {
+    font-size: 8px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 60px;
+  }
+}
+
+
+/*Media*/
+
+@media only screen and (max-width: 600px)
+{
+  
+  .navSearch {float:right}
+  .navSearch ul li:not(:last-child){padding-left:12px;}
+  .dropdown{display: none;}
+ 
+}
+@media only screen and (max-width: 1024px)
+{.nav .navTitle img{ 
+    width: 70%;
+    float: none;
+    display: block;
+    margin: 0 auto;}
+}
+
+@media only screen and (max-width: 600px)
+{
+  .PrivaInfo
+  { position: relative;
+    padding-top: 412px;
+    font-size: 18px;
+    left: -22%;
+    word-wrap: break-word;
+    width: 121%;
+  }
+  .PrivaText{    
+    position: relative;
+    font-size: 25px;
+   }
+
+.imgBanner{    position: relative;
+    width: 75%;
+    height: 500px;
+    background-image: url(../images/priva/banner/banner.jpg);
+    background-size: cover;
+    left: 70px;
+    top: 100px;
+    }
+    .Privaorange{    height: 700px;}
+    .Privaback{    height: 700px;}
+    
+}
+
+@media screen and (max-width: 600px) {
+  .earnpointlogo, .earnpointDesc {
+    width: 100%;
+  }
+
+  .earnpointDesc {
+    padding-left:0px;
+  }
+  .row1{    margin-top: 200px;}
+}
+@media screen and (max-width: 767px) {
+  .whyPrivadesc {
+    padding-left: 0px;
+    padding-top: 2%;
+  }
+  .whyPrivalogo, .whyPrivadesc {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .earnpointDesc {
+    padding-left: 10%;
+    padding-top: 6%;
+  }
+
+  .earnpointDesc, .earnpointlogo {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px)
+ {
+  .EarnPointsDesktop {
+    display: none;
+  }
+
+  .EarnPointsMobile {
+    display: block;
+  }
+
+  .giftGoldMobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+
+  .giftSilverMobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+
+  .giftPlatinumMobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+
+  .active {.item {
+    opacity: 1;
+    transform: scale(1);}
+  }
+
+  .item {
+    opacity: 0.4;
+    transition: 0.4s ease all;
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+  .lowerhalfOfEarnPointsMobile{
+    padding: 8% 0px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+  .row3 {
+    padding: 20px;
+  }
+
+  .row4 {
+    padding: 20px;
+  }
+
+  .row5 {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .RedeemPointlogo, .RedeemPointdesc {
+    width: 100%;
+  }
+
+  .RedeemPointdesc {
+    padding-top: 5%;
+    padding-left:0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .RedeemPointdesc {
+    padding-left: 10%;
+    padding-top: 6%;
+  }
+
+  .RedeemPointdesc, .RedeemPointlogo {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .RedeemPointsDesktop {
+    display: none;
+  }
+
+  .RedeemPointsMobile {
+    display: block;
+    position: relative;
+  }
+
+  /* .prev,.next{display:block;} */
+  .buyMobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+
+  }
+
+  .coverMobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+
+  }
+
+  .liquidateMobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+
+  }
+
+  .active {.item {
+    opacity: 1;
+    transform: scale(1);}
+  }
+
+  .item {
+    opacity: 0.4;
+    transition: 0.4s ease all;
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+
+  
+}
+
+
+@media screen and (max-width: 420px){.BestPriceText, .AssuredDiscountText, .ServiceGuaranteeText{width: 100%;}}
+
+@media screen and (min-width: 1024px) {
+
+
+  .whyPrivadesc, .whyPrivalogo {
+    height: 150px;
+  }
+}
+/*--BestPrice--*/
+
+@media only screen and (max-width: 767px) 
+{
+  .whyPriva {.whyPrivarow2 {.BestPrice {width: 80%;}}}
+  .whyPriva {.whyPrivarow3 {.AssuredDiscount{width:80%;}}}
+  .whyPriva {.whyPrivarow4 {.ServiceGuarantee{width:80%;}}}
+  .whyPriva {.whyPrivarow3 {.whyPrivarow3Blank{width:20%}}}
+  .whyPriva {.whyPrivarow2 {.whyPrivarow2Blank {width:20%;}}}
+  .whyPriva {.whyPrivarow4 {.whyPrivarow4Blank{width:20%;}}}
+
+  .BestPriceNumber {
+    padding-top: 8%;
+  }
+}
+@media only screen and (max-width:580px)
+{
+  .whyPriva {.whyPrivarow2 {.BestPrice { width: 100%;}}}
+  .whyPriva {.whyPrivarow3 {.AssuredDiscount{width:100%;}}}
+  .whyPriva {.whyPrivarow4 {.ServiceGuarantee{width:100%;}}}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .BestPriceTitle{
+    width: 14%;
+  }
+}
+
+/*--AssuredDiscount--*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .AssuredDiscountNumber {
+    padding-top: 8%;
+  }
+}
+
+/*--ServiceGuarantee--*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+
+
+  .ServiceGuaranteeNumber {
+    padding-top: 8%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .highlights .MemEnrolled1, .highlights .MemEnrolled2, .highlights .MemEnrolled3 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .WatchDesktop {
+    display: none;
+  }
+
+  .WatchMobile {
+    display: block;
+  }
+
+  .AppleWatchImg1Mobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+.WatchMobile {p{font-size:20px;text-align:center;font-weight:bold;}}
+  .AppleWatchImg2Mobile {
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+// .AppleWatchImg2Mobile{p{font-size:20px;text-align:center;font-weight:bold;}}
+
+  .active {.item {
+    opacity: 1;
+    transform: scale(1);}
+  }
+
+  .item {
+    opacity: 0.4;
+    transition: 0.4s ease all;
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+}
+/*cursor*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mainGiveAway {.giveAways {
+    width: 66%;}
+  }
+
+  .mainGiveAway {.AppleWatchImg {
+    width: 60%;
+    left: 30%;}
+  }
+
+  .fontOur {
+    font-size: 18px;
+  }
+
+  .fontGiveaway {
+    font-size: 18px;
+  }
+
+  .prevWatchCarouselarrows {
+    left: 20%;
+    top: 60%;
+  }
+
+  .nextWatchCarouselarrows {
+    left: 88%;
+    top: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    margin: 0px 50px;
+  }
+
+  .prevWatchCarouselarrows {
+    left: 83%;
+  }
+
+  .nextWatchCarouselarrows {
+    left: 89%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .content {
+    margin: 0px 70px;
+  }
+
+  .prevWatchCarouselarrows {
+    left: 86%;
+  }
+
+  .nextWatchCarouselarrows {
+    left: 90%;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .clearFixImgTestimonials {
+    width: 15%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .clearFixImgTestimonials {
+    width: 8%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .clearFixImgTestimonials {
+    width: 6%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .clearFixImgTestimonials {
+    width: 4%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .LogintextQueries:before {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .LogintextQueries:before {
+    width: 80%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .LogintextQueries:before {
+    width: 80%;
+  }
+}
